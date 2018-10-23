@@ -1,0 +1,71 @@
+.about {
+    background: #ebebeb;
+    padding-top: 120px;
+    font-family: $pts;
+    color: #665f60;
+    padding-bottom: 70px;
+    font-size: 0;
+
+    &__img {
+        height: 34vw;
+        background: url('../images/about.jpg') no-repeat;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+
+        &-icon {
+            padding-top: 3.7vw;
+        }
+
+        &-title {
+            font-family: $pn;
+            text-transform: uppercase;
+            font-size: .022rem;
+            font-weight: bold;
+            padding-top: 2.5vw;
+            cursor: default;
+            
+        }
+    }
+
+    &__article {
+        margin-top: 4.3vw;
+        cursor: default;
+
+        p {
+            padding-bottom: 1.5vw;
+            font-family: $pts;
+            font-size: 20px;
+            line-height: 1.3;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__button {
+        padding-top: 5vw;
+        width: 100%;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: #7d7a7c;
+            font-family: $pts;
+            font-style: italic;
+            font-size: 1.2vw;
+            border: 1px solid #7d7a7c;
+            padding: 10px 50px;
+
+            &:hover {
+                border: 2px solid #665f60;  
+                transition: all .1s ease-in-out;
+            }
+
+        }
+    }
+
+
+
+}

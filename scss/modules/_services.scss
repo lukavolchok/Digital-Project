@@ -1,0 +1,89 @@
+.services {
+    background: #ebebeb;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 0;
+    margin-top: -1px;
+
+    .container {
+        height: 93%;
+
+        .grid {
+            width: 100%;
+            height: 100%;
+            background: url('../images/aboutbg.jpg') no-repeat;
+            background-position: calc(100% - 15px) 2px;
+            background-size: 33% 100%;
+            text-align: center;
+    
+            .grid-item {
+                float: left;
+                width: 33%;
+                height: 50%;
+                box-sizing: border-box;
+                color: #665f60;/* 
+                display: flex;
+                flex-direction: column;
+                justify-content: center; */
+    
+                &:hover .services__img {
+                    transform: rotate3d(0, 1, 0, 360deg);
+                    transition: all .5s ease-in;
+                }
+    
+                &-colordark {
+                    background: #dbdbdb;
+                }
+    
+                &-colorlight {
+                    background: #ebebeb;
+                }
+    
+                &-h2 {
+                    position: relative;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__img {
+        padding-top: 10%;
+    }
+
+    &__title, &__title2 {
+        font-family: $pn;
+        font-weight: bold;
+        font-size: 1.5vw;
+        padding-top: 9%;
+        text-transform: uppercase;
+        cursor: default;
+
+
+        &2 {
+            font-size: .022rem;
+            color: #fefcfd;
+            margin: 0 auto;
+
+        }
+    }
+
+    &__desc, &__desc2 {
+        font-family: $pts;
+        font-style: italic;
+        font-size: 1.1vw;
+        line-height: 1.3;
+        padding-top: 8%;
+        cursor: default;
+
+        &2 {
+            color: #fefcfd;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            position: absolute;
+            padding: 10.7vh 1.2vh;
+        }
+    }
+}

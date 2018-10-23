@@ -1,0 +1,27 @@
+.footer {
+    background: #9f9acf;
+    color: #fff;
+    font-size: 0;
+    height: 180px;
+    padding-top: 80px;
+
+    &__copyright {
+        font-size: 18px;
+        font-family: $pts;
+        cursor: default;
+    }
+
+    &__links {
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                cursor: pointer;
+
+            }
+        }
+    }
+}
